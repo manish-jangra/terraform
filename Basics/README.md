@@ -67,6 +67,3 @@ Destroy a specific resource provisioned by terraform
 ```BASH
 terraform destroy -target aws_instance.my_ec2_instance
 ```
-
-There are multiple ways for specifying the version of a provider.
-![Alt text](image.png)
