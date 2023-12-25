@@ -62,3 +62,8 @@ terraform apply
 terraform destroy
 # We can also use -auto-approve option to avoid the prompt
 ```
+
+Destroy a specific resource provisioned by terraform
+```BASH
+terraform destroy -target aws_instance.my_ec2_instance
+```
