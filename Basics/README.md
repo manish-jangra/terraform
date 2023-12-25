@@ -67,3 +67,6 @@ Destroy a specific resource provisioned by terraform
 ```BASH
 terraform destroy -target aws_instance.my_ec2_instance
 ```
+
+Questions:
+1. How to update the state file for a resource created by terraform but modified outside terraform?
