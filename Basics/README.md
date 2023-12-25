@@ -25,6 +25,6 @@ Setup the following environment variables before running the terraform script
     export AWS_ACCESS_KEY_ID="aws_access_key"
     export AWS_SECRET_ACCESS_KEY="aws_secret_key"
 
-    or if you have configured AWS Profiles using `aws configure`, use the following command -
+    # If you have configured AWS Profiles using `aws configure`, use the following command -
     export AWS_PROFIE="aws_profile_name"
 ```
