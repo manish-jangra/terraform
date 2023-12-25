@@ -28,3 +28,27 @@ Setup the following environment variables before running the terraform script
     # If you have configured AWS Profiles using `aws configure`, use the following command -
     export AWS_PROFIE="aws_profile_name"
 ```
+
+From Terraform 0.13 and onwards, we need to configure it like below --
+
+```TF
+# Terraform block provides us the list of providers (such as aws, azure, google cloud etc) and their respective versions.
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 5.0"
+    }
+  }
+}
+
+# Configure the AWS Provider
+provider "aws" {
+  region = "us-east-1"
+}
+
+# Create a VPC
+resource "aws_vpc" "example" {
+  cidr_block = "10.0.0.0/16"
+}
+```
