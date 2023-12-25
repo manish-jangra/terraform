@@ -1,5 +1,4 @@
-### Sample terraform provider definition
-```TF
+# Sample Terraform Provider Definition
 terraform {
   required_version = "~> 1.6.0"
   required_providers {
@@ -20,4 +19,3 @@ provider "aws" {
   profile = ""
   region  = "us-east-1"
 }
-```
