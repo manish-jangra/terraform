@@ -52,3 +52,13 @@ resource "aws_vpc" "example" {
   cidr_block = "10.0.0.0/16"
 }
 ```
+
+Some useful terraform commands --
+```BASH
+terraform fmt           # Fixes the formatting, I love this command
+terraform validate
+terraform plan
+terraform apply
+terraform destroy
+# We can also use -auto-approve option to avoid the prompt
+```
