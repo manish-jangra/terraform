@@ -1,3 +1,4 @@
+### Sample terraform provider definition
 ```TF
 terraform {
   required_version = "~> 1.6.0"
