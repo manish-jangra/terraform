@@ -19,12 +19,12 @@ resource "aws_instance" "myec2" {
     instance_type = "t2.micro"
 }
 ```
->**NOTE** Setup the following environment variables before running the terraform script
+Setup the following environment variables before running the terraform script
     ```BASH
     export AWS_REGION="aws_region_name"
-    export AWS_ACCESS_KEY_ID = "aws_access_key"
-    export AWS_SECRET_ACCESS_KEY = "aws_secret_key"
+    export AWS_ACCESS_KEY_ID="aws_access_key"
+    export AWS_SECRET_ACCESS_KEY="aws_secret_key"
 
     or if you have configured AWS Profiles using `aws configure`, use the following command -
-    export AWS_PROFIE = "aws_profile_name"
+    export AWS_PROFIE="aws_profile_name"
     ```
