@@ -69,5 +69,27 @@ terraform destroy -target aws_instance.my_ec2_instance
 ```
 The `terraform show` command is used to provide human-readable output from a state or plan file
 
+We can override variable values defined in `variables.tf` by declaring them `terraform.tfvars`
+
+Example
+
+```TF
+/*
+This is variables.tf
+*/
+variable "vpc_cidr" {
+  type    = string
+  default = "10.0.0.0/16"
+}
+```
+
+```TF
+/*
+This is terraform.tfvars
+*/
+vpc_cidr = "192.168.100.0/22"
+```
+We don't need to use keyword `variable` in `terraform.tfvars` file.
+
 Questions:
 1. How to update the state file for a resource created by terraform but modified outside terraform?
