@@ -67,6 +67,7 @@ Destroy a specific resource provisioned by terraform
 ```BASH
 terraform destroy -target aws_instance.my_ec2_instance
 ```
+The `terraform show` command is used to provide human-readable output from a state or plan file
 
 Questions:
 1. How to update the state file for a resource created by terraform but modified outside terraform?
